@@ -28,13 +28,13 @@
         <NativeMenuItem.Menu>
           <NativeMenu>
             <NativeMenuItem Icon="/Assets/test_icon.ico" Header="Open" Gesture="Ctrl+O"/>
-            <NativeMenuItemSeperator/>
+            <NativeMenuItemSeparator />
             <NativeMenuItem Icon="/Assets/github_icon.png" Header="Recent">
               <NativeMenuItem.Menu>
                 <NativeMenu/>
               </NativeMenuItem.Menu>
             </NativeMenuItem>
-            <NativeMenuItemSeperator/>
+            <NativeMenuItemSeparator/>
 
           </NativeMenu>
         </NativeMenuItem.Menu>

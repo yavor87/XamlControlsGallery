@@ -19,7 +19,7 @@ namespace XamlControlsGallery
                 .UsePlatformDetect()
                 .With(new SkiaOptions{ MaxGpuResourceSizeBytes = 8096000})
                 .With(new Win32PlatformOptions{ AllowEglInitialization = true })
-                .LogToDebug()
+                .LogToTrace()
                 .UseReactiveUI();
     }
 }

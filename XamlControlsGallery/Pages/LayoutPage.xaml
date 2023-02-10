@@ -160,18 +160,20 @@
               <converters:ColorToBrushConverter x:Key="BrushConverter" />
             </Border.Resources>
             <ScrollViewer Height="400" Width="400">
-              <ItemsRepeater Items="{CompiledBinding Items}">
-                <ItemsRepeater.Layout>
-                  <StackLayout Spacing="4" Orientation="Vertical"/>
-                </ItemsRepeater.Layout>
-                <ItemsRepeater.ItemTemplate>
+              <ItemsControl Items="{CompiledBinding Items}">
+                <ItemsControl.ItemsPanel>
+                  <ItemsPanelTemplate>
+                    <StackPanel Spacing="4" Orientation="Vertical"/>
+                  </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
                   <DataTemplate x:DataType="vm:ItemViewModel">
                     <Border Background="{CompiledBinding Color, Converter={StaticResource BrushConverter}}" Width="80" Height="80">
                       <TextBlock Text="{CompiledBinding Text}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </Border>
                   </DataTemplate>
-                </ItemsRepeater.ItemTemplate>
-              </ItemsRepeater>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
             </ScrollViewer>
           </Border>
           <Panel Background="{DynamicResource SystemControlBackgroundAltHighBrush}">
@@ -206,18 +208,20 @@
               <converters:ColorToBrushConverter x:Key="BrushConverter" />
             </Border.Resources>
             <ScrollViewer Height="400" Width="400" HorizontalScrollBarVisibility="Disabled">
-              <ItemsRepeater Items="{CompiledBinding Items}">
-                <ItemsRepeater.Layout>
-                  <UniformGridLayout Orientation="Horizontal" />
-                </ItemsRepeater.Layout>
-                <ItemsRepeater.ItemTemplate>
+              <ItemsControl Items="{CompiledBinding Items}">
+                <ItemsControl.ItemsPanel>
+                  <ItemsPanelTemplate>
+                    <UniformGrid />
+                  </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
                   <DataTemplate x:DataType="vm:ItemViewModel">
                     <Border Background="{CompiledBinding Color, Converter={StaticResource BrushConverter}}" Width="80" Height="80">
                       <TextBlock Text="{CompiledBinding Text}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
                     </Border>
                   </DataTemplate>
-                </ItemsRepeater.ItemTemplate>
-              </ItemsRepeater>
+                </ItemsControl.ItemTemplate>
+              </ItemsControl>
             </ScrollViewer>
           </Border>
           <Panel Background="{DynamicResource SystemControlBackgroundAltHighBrush}">
