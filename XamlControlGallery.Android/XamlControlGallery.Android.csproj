@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net6.0-android</TargetFramework>
+        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <OutputType>Exe</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <ApplicationId>com.Avalonia.XamlControlGallery</ApplicationId>
+        <ApplicationVersion>1</ApplicationVersion>
+        <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    </PropertyGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\XamlControlsGallery\XamlControlsGallery.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Avalonia.Android" Version="11.0.999-cibuild0029861-beta" />
+      <PackageReference Include="Avalonia.Diagnostics" Version="11.0.999-cibuild0029861-beta" />
+      <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.999-cibuild0029861-beta" />
+    </ItemGroup>
+</Project>
