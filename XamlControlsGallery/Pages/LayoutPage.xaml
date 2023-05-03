@@ -160,7 +160,7 @@
               <converters:ColorToBrushConverter x:Key="BrushConverter" />
             </Border.Resources>
             <ScrollViewer Height="400" Width="400">
-              <ItemsControl Items="{CompiledBinding Items}">
+              <ItemsControl ItemsSource="{CompiledBinding Items}">
                 <ItemsControl.ItemsPanel>
                   <ItemsPanelTemplate>
                     <StackPanel Spacing="4" Orientation="Vertical"/>
@@ -208,7 +208,7 @@
               <converters:ColorToBrushConverter x:Key="BrushConverter" />
             </Border.Resources>
             <ScrollViewer Height="400" Width="400" HorizontalScrollBarVisibility="Disabled">
-              <ItemsControl Items="{CompiledBinding Items}">
+              <ItemsControl ItemsSource="{CompiledBinding Items}">
                 <ItemsControl.ItemsPanel>
                   <ItemsPanelTemplate>
                     <UniformGrid />
