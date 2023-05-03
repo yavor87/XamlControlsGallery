@@ -8,8 +8,8 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="Avalonia.Desktop" Version="11.0.999-cibuild0029861-beta" />
-    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.999-cibuild0029861-beta" />
+    <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview7" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0-preview7" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamlControlsGallery\XamlControlsGallery.csproj" />

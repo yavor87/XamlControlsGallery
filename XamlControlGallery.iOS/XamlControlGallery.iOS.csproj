@@ -16,8 +16,8 @@
     <ProjectReference Include="..\XamlControlsGallery\XamlControlsGallery.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.999-cibuild0029861-beta" />
-    <PackageReference Include="Avalonia.iOS" Version="11.0.999-cibuild0029861-beta" />
-    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.999-cibuild0029861-beta" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0-preview7" />
+    <PackageReference Include="Avalonia.iOS" Version="11.0.0-preview7" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0-preview7" />
   </ItemGroup>
 </Project>
